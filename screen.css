@@ -2,3 +2,38 @@
 a.active {
     font-weight: bold;
 }
+
+/* Poster styles */
+:root{
+    --accent:#ffb703;
+    --deep:#023047;
+    --muted:#f8f9fa;
+}
+html,body{height:100%;}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, #f1f7ff 0%, #e6f0ff 50%);
+    color: #06283D;
+}
+.poster{
+    max-width:900px;
+    border-radius:18px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6));
+    box-shadow: 0 10px 30px rgba(2,16,36,0.12);
+    border: 1px solid rgba(2,16,36,0.06);
+}
+.poster-title{
+    color: var(--deep);
+    letter-spacing: -1px;
+}
+.poster-sub{
+    color: #ff7f50;
+    font-weight:600;
+}
+.poster-details p{margin:0;}
+.poster-features li{color:rgba(2,16,36,0.7);}
+
+@media (max-width:576px){
+    .poster{margin:1rem; border-radius:12px;}
+    .poster-title{font-size:2rem}
+}
